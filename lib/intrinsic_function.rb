@@ -150,4 +150,14 @@ class IntrinsicFunction
     return "FnCidr(#{@parameters.ai})"
   end
 
+
+  
+  def fn_transform
+    
+    resource_name = '\'' + @parameters[0] + '\''
+    attr_name     = '\'' + @parameters[1] + '\''
+    return "FnTransform(#{@parameters.ai})"
+
+  end
+
 end
